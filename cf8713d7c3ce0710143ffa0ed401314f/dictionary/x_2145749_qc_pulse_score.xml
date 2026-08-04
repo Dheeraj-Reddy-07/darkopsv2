@@ -9,10 +9,10 @@
         <element attributes="scale=1" label="Equipment Uptime Sub-Score" max_length="20" name="equipment_uptime_score" type="decimal"/>
         <element label="Band" max_length="40" name="band" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Healthy (80-100)" sequence="1" value="healthy"/>
                 <element inactive_on_update="false" label="Critical (&lt;40)" sequence="4" value="critical"/>
                 <element inactive_on_update="false" label="At Risk (40-59)" sequence="3" value="at_risk"/>
                 <element inactive_on_update="false" label="Watch (60-79)" sequence="2" value="watch"/>
-                <element inactive_on_update="false" label="Healthy (80-100)" sequence="1" value="healthy"/>
             </choice>
         </element>
         <element label="Open Store Issues" max_length="40" name="open_store_issue_count" type="integer"/>

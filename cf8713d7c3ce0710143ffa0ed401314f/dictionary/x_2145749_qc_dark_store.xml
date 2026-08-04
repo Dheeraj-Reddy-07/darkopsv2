@@ -3,10 +3,10 @@
         <element display="true" label="Store Name" mandatory="true" max_length="100" name="store_name" type="string"/>
         <element label="PulseScore Band" max_length="40" name="pulse_score_band" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Watch (60-79)" sequence="2" value="watch"/>
                 <element inactive_on_update="false" label="Healthy (80-100)" sequence="1" value="healthy"/>
                 <element inactive_on_update="false" label="Critical (&lt;40)" sequence="4" value="critical"/>
                 <element inactive_on_update="false" label="At Risk (40-59)" sequence="3" value="at_risk"/>
+                <element inactive_on_update="false" label="Watch (60-79)" sequence="2" value="watch"/>
             </choice>
         </element>
         <element label="Delivery Zone" mandatory="true" max_length="32" name="zone" reference="x_2145749_qc_delivery_zone" type="reference"/>

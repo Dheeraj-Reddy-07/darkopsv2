@@ -4,21 +4,21 @@
         <element display="true" label="Partner Name (Deprecated)" max_length="100" name="partner_name" type="string"/>
         <element choice="1" label="Vehicle Type" max_length="40" name="vehicle_type" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Bike" sequence="1" value="bike"/>
+                <element inactive_on_update="false" label="Van" sequence="5" value="van"/>
+                <element inactive="true" inactive_on_update="true" label="On Foot" sequence="4" value="on_foot"/>
                 <element inactive="true" inactive_on_update="true" label="Bicycle" sequence="3" value="bicycle"/>
                 <element inactive_on_update="false" label="Scooter" sequence="2" value="scooter"/>
-                <element inactive_on_update="false" label="Van" sequence="5" value="van"/>
-                <element inactive_on_update="false" label="Bike" sequence="1" value="bike"/>
-                <element inactive="true" inactive_on_update="true" label="On Foot" sequence="4" value="on_foot"/>
             </choice>
         </element>
         <element label="Assigned Zone" max_length="32" name="home_zone" reference="x_2145749_qc_delivery_zone" type="reference"/>
         <element active="false" label="Phone (Deprecated)" max_length="20" name="phone" type="string"/>
         <element choice="1" default="active" label="Status" max_length="40" name="status" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
                 <element inactive_on_update="false" label="Inactive" sequence="4" value="inactive"/>
                 <element inactive="true" inactive_on_update="true" label="Offboarded" sequence="3" value="offboarded"/>
                 <element inactive_on_update="false" label="Suspended" sequence="2" value="suspended"/>
-                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
             </choice>
         </element>
         <index name="index">
